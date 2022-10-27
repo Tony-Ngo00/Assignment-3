@@ -1,0 +1,25 @@
+img {
+    width: 200px;
+    height: 300px;
+  }
+  
+  p {
+    color: rgb(202, 26, 26);
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  iframe {
+    height: 300px;
+    aspect-ratio: 16 / 9;
+  }
+  
+  body {
+    background-color: rgba(0, 0, 0, 0.795);
+  }
+
+  label {
+    color: rgb(202, 26, 26);
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+  }
