@@ -2,7 +2,6 @@ let response = axios.get("https://api.themoviedb.org/3/search/movie", {
   params: {
     api_key: "779ebe30f392f779f18a739e5df2f414",
     include_adult: "false",
-    query: "batman",
   }
 });
 
