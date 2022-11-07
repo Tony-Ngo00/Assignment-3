@@ -6,8 +6,6 @@ function getOption() {
   }
 };
 
-console.log(getOption())
-
 button.addEventListener('click', async () => {
   let response = axios.get("https://api.themoviedb.org/3/search/movie", {
     params: {
@@ -24,7 +22,7 @@ button.addEventListener('click', async () => {
           api_key: "779ebe30f392f779f18a739e5df2f414",
           append_to_response: "videos",
         }
-      }).then((movieData) => {
+        }).then((movieData) => {
         const img = document.createElement('img');
         const p = document.createElement('p');
         const iframe = document.createElement('iframe');

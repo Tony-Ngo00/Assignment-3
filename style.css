@@ -1,27 +1,33 @@
 img {
-    width: 200px;
-    height: 300px;
-  }
-  
-  p {
-    color: rgb(202, 26, 26);
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+    width: 300px;
+    height: 400px;
   }
   
   iframe {
-    height: 300px;
+    height: 400px;
     aspect-ratio: 16 / 9;
   }
   
+  h1 {
+    color: rgb(202, 26, 26);
+    font-weight: bold;
+    font-family: Verdana, Tahoma, sans-serif;
+  }
+
   body {
     background-color: rgba(0, 0, 0, 0.795);
+  }
+
+  p {
+    color: rgb(202, 26, 26);
+    font-weight: bold;
+    font-family: Verdana, Tahoma, sans-serif;
   }
 
   label {
     color: rgb(202, 26, 26);
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Tahoma, sans-serif;
     font-size: 20px;
   }
 
