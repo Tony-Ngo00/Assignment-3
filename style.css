@@ -60,6 +60,7 @@ h1 {
 }
 
 #overviewText {
+  width: 1000px;
   padding-left: 20px;
   color: rgb(202, 26, 26);
   font-weight: bold;

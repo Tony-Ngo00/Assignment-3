@@ -45,7 +45,7 @@ button.addEventListener('click', async () => {
           genres += element.name + ' ' 
         });
 
-        info.innerHTML = `Title: ${selectedMovie.title} <br> Original Title: ${selectedMovie.original_title} <br> Genre: ${genres} <br> Release Date: ${selectedMovie.release_date} <br> Popularity: ${selectedMovie.popularity} <br> Revenue: $${selectedMovie.revenue} <br> Vote Average: ${selectedMovie.vote_average} <br> Vote Count: ${selectedMovie.vote_count}`;
+        info.innerHTML = `Title: ${selectedMovie.title} <br> Original Title: ${selectedMovie.original_title} <br> Genre: ${genres} <br> Release Date: ${selectedMovie.release_date} <br> Popularity: ${selectedMovie.popularity} <br> Revenue: $${selectedMovie.revenue} <br> Vote Average: ${selectedMovie.vote_average} <br> Vote Count: ${selectedMovie.vote_count} <br> Runtime: ${selectedMovie.runtime} mins`;
         overviewLabel.innerHTML = "Overview";
         overviewText.innerHTML = `${selectedMovie.overview}`;
       });
