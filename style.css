@@ -19,6 +19,8 @@ h1 {
   font-size: 20px;
 }
 
+
+
 #Movies {
   color: rgb(202, 26, 26);
   background-color: rgb(54, 52, 52);
@@ -36,11 +38,32 @@ h1 {
   border-width: 3px;
 }
 
-#title {
+#info {
   padding-left: 20px;
   color: rgb(202, 26, 26);
   font-weight: bold;
   font-family: Verdana, Tahoma, sans-serif;
+}
+
+#vote {
+  padding-left: 20px;
+  color: rgb(202, 26, 26);
+  font-weight: bold;
+  font-family: Verdana, Tahoma, sans-serif;
+}
+
+#overviewLabel {
+  padding-left: 20px;
+  color: rgb(202, 26, 26);
+  font-weight: bold;
+  font-family: Verdana, Tahoma, sans-serif;
+}
+
+#overviewText {
+  padding-left: 20px;
+  color: rgb(202, 26, 26);
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #cover {
