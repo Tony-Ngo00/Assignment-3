@@ -25,6 +25,8 @@ button.addEventListener('click', async () => {
         }
       }).then((movieData) => {
 
+        let selectedMovie = movieData.data
+
         const info = document.getElementById('info');
         const overviewLabel = document.getElementById('overviewLabel');
         const overviewText = document.getElementById('overviewText');
@@ -34,12 +36,18 @@ button.addEventListener('click', async () => {
         const display = document.getElementById('display');
         display.removeAttribute('hidden')
 
-        const trailers = movieData.data.videos.results.filter((trailer) => trailer.type === "Trailer");
+        const trailers = selectedMovie.videos.results.filter((trailer) => trailer.type === "Trailer");
         video.src = `https://www.youtube.com/embed/${trailers.at(0).key}`
         cover.src = `https://image.tmdb.org/t/p/w500${movie.poster_path}`;
-        info.innerHTML = `${movie.title} <br> Genre: ${movie.genre} <br> Release Date: ${movie.release_date} <br> Popularity: ${movie.popularity} <br> Revenue: $${movie.revenue} <br> Vote Average: ${movie.vote_average} <br> Vote Count: ${movie.vote_count}`;
+
+        let genres = '';
+        selectedMovie.genres.forEach(element => {
+          genres += element.name + ' ' 
+        });
+
+        info.innerHTML = `Title: ${selectedMovie.title} <br> Original Title: ${selectedMovie.original_title} <br> Genre: ${genres} <br> Release Date: ${selectedMovie.release_date} <br> Popularity: ${selectedMovie.popularity} <br> Revenue: $${selectedMovie.revenue} <br> Vote Average: ${selectedMovie.vote_average} <br> Vote Count: ${selectedMovie.vote_count}`;
         overviewLabel.innerHTML = "Overview";
-        overviewText.innerHTML = `${movie.overview}`;
+        overviewText.innerHTML = `${selectedMovie.overview}`;
       });
     }
   });
