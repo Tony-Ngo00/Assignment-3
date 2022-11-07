@@ -41,12 +41,11 @@ h1 {
 #cover {
   padding-left: 20px;
   width: 300px;
-  height: 400px;
+  height: 410px;
   border: 5px;
 }
 
 #video {
-  padding-left: 20px;
   height: 400px;
   aspect-ratio: 16 / 9;
   border-width: 5px;
