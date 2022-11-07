@@ -7,6 +7,7 @@ function getOption() {
 };
 
 button.addEventListener('click', async () => {
+
   let response = axios.get("https://api.themoviedb.org/3/search/movie", {
     params: {
       api_key: "779ebe30f392f779f18a739e5df2f414",
@@ -22,20 +23,21 @@ button.addEventListener('click', async () => {
           api_key: "779ebe30f392f779f18a739e5df2f414",
           append_to_response: "videos",
         }
-        }).then((movieData) => {
-        const img = document.createElement('img');
-        const p = document.createElement('p');
-        const iframe = document.createElement('iframe');
+      }).then((movieData) => {
+
+        const title = document.getElementById('title');
+        const cover = document.getElementById('cover');
+        const video = document.getElementById('video');
+
+        const display = document.getElementById('display');
+        display.removeAttribute('hidden')
 
         const trailers = movieData.data.videos.results.filter((trailer) => trailer.type === "Trailer");
-        iframe.src = `https://www.youtube.com/embed/${trailers.at(0).key}`
-        img.src = `https://image.tmdb.org/t/p/w500${movie.poster_path}`;
-        p.innerHTML = `${movie.title} <br> Release Date: ${movie.release_date}`;
-
-        document.body.append(p);
-        document.body.append(img);
-        document.body.append(iframe);
+        video.src = `https://www.youtube.com/embed/${trailers.at(0).key}`
+        cover.src = `https://image.tmdb.org/t/p/w500${movie.poster_path}`;
+        title.innerHTML = `${movie.title} <br> Release Date: ${movie.release_date}`;
       });
     }
   });
 });
+

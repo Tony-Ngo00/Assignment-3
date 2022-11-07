@@ -8,8 +8,8 @@
   <script src="./script.js" defer></script>
   <link rel="stylesheet" href="style.css">
   <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
-  <h1>Not Netflix</h1>
-  <label for="Movies">Choose a Movie:</label>
+  <h1>Totally Netflix</h1>
+  <label id = "select" for="Movies">Choose a Movie:</label>
 
   <select name="Movies" id="Movies">
     <option value="Jujutsu Kaisen 0">Jujutsu Kaisen 0</option>
@@ -26,6 +26,11 @@
   <button id="button">Get</button>
 </head>
 <body>
+  <div id="display" hidden>
+    <p id="title"></p>
+    <img id="cover"></img>
+    <iframe id="video"></iframe>
+  </div>
 </body>
 
 </html>
