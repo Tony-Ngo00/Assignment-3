@@ -1,9 +1,14 @@
 h1 {
   padding-left: 50px;
+  padding-bottom: 30px;
   color: rgb(202, 26, 26);
   font-weight: bold;
-  font-size: 50px;
+  font-size: 45px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#underline {
+  color: rgb(46, 183, 235);
 }
 
 #select {
