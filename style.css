@@ -46,6 +46,7 @@ h1 {
 }
 
 #info {
+  margin-top: 0%;
   padding-left: 20px;
   color: rgb(196, 67, 67);
   font-weight: bold;
@@ -78,6 +79,7 @@ h1 {
 }
 #cover {
   padding-left: 20px;
+  margin-top: 0%;
 }
 
 #video {
