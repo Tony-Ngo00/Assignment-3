@@ -5,11 +5,11 @@ html {
 }
 
 h1 {
-  text-align: center;
+  padding-left: 20px;
   color: rgb(202, 26, 26);
   font-weight: bold;
-  font-size: 45px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 50px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #select {
