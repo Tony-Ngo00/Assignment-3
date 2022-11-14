@@ -1,9 +1,5 @@
 function selectOption() {
-  for (let x = 0; x < 10; x++) {
-    if (document.getElementById("Movies").selectedIndex == x) {
-      return document.getElementById("Movies").value
-    }
-  }
+  return document.getElementById("Movies").value
 };
 
 button.addEventListener('click', async () => {
